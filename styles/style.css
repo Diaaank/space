@@ -1,0 +1,145 @@
+body {
+    background: black url(img/stars.png);
+}
+
+div {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* border: 1px solid red; */
+}
+div img:not(.sun img) {
+    animation: turn 10s linear infinite;
+}
+
+.sun {
+    width: 100px;
+}
+
+.sun img {
+    width: 220px;
+    height: 220px;
+}   
+
+.earth {
+    width: 160px;
+    height: 160px;
+    animation: orbit 30s linear infinite;
+}
+
+.earth img {
+    width: 40px;
+    height: 40px;
+    animation: turn 10s linear infinite;
+}
+
+.jpiter {
+    width: 260px;
+    height: 260px;
+    animation: orbit 40s linear infinite;
+}
+
+.jpiter img {
+    width: 50px;
+    height: 50px;
+}
+
+.mars {
+    width: 310px;
+    height: 310px;
+    animation: orbit 46s linear infinite;
+}
+
+.mars img {
+    width: 30px;
+    height: 30px;
+}
+
+.merkyr {
+    width: 380px;
+    height: 380px;
+    animation: orbit 50s linear infinite;
+}
+
+.merkyr img {
+    width: 40px;
+    height: 40px;
+}
+
+.neptun {
+    width: 420px;
+    height: 420px;
+    animation: orbit 60s linear infinite;
+}
+
+.neptun img {
+    width: 26px;
+    height: 26px;
+}
+
+.sayurn {
+    width: 500px;
+    height: 500px;
+    animation: orbit 66s linear infinite;
+}
+
+.sayurn img {
+    width: 40px;
+    height: 40px;
+}
+
+.uran {
+    width: 548px;
+    height: 548px;
+    animation: orbit 70s linear infinite;
+}
+
+.uran img {
+    width: 30px;
+    height: 30px;
+}
+
+.venera{
+    width: 600px;
+    height: 600px;
+    animation: orbit 76s linear infinite;
+}
+
+.venera img {
+    width: 28px;
+    height: 28px;
+}
+
+@keyframes turn {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes orbit {
+    from {
+        transform: rotate(0deg) translateX(100%) rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg) translateX(100%) rotate(-360deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
